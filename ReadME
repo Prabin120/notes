@@ -1,0 +1,88 @@
+# Notes
+
+Make notes and Share with your friends
+
+## Table of Contents
+
+- [Technologies](#technologies)
+- [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Running Tests](#running-tests)
+
+## Technologies
+
+### Framework
+
+The project is built using Django Rest Framework (DRF) as the primary framework.
+
+### Database
+
+The application uses PostgreSQL as the database backend.
+
+### Third-Party Libraries
+
+- **Django Rest Framework:** Used for building the RESTful API endpoints.
+- **Django Rest Framework Simple JWT:** Used for JWT-based authentication.
+
+## Setup
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Python (3.9 and above)
+- PostgreSQL (15 and above)
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-project.git
+    cd your-project
+    ```
+
+2. Creating and activating virtual environment:
+
+    ```bash
+    pip install pipenv
+    pipenv shell
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    pipenv install
+    ```
+
+### Running the Application
+
+1. Apply database migrations:
+
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+2. Create a superuser (if applicable):
+
+    ```bash
+    python manage.py createsuperuser
+    ```
+
+3. Run the development server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+The application should now be accessible at `http://localhost:8000`.
+
+## Running Tests
+
+To run the tests, use the following command:
+
+```bash
+python manage.py test
